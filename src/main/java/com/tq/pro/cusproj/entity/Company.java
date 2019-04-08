@@ -36,6 +36,12 @@ public class Company {
 	@Column(name = "instagramLink")
 	private String instagramLink;
 
+	@Column(name = "logo")
+	private String logo;
+	
+	@Column(name = "banner")
+	private String banner;
+	
 	public long getId() {
 		return id;
 	}
@@ -98,6 +104,22 @@ public class Company {
 
 	public void setInstagramLink(String instagramLink) {
 		this.instagramLink = instagramLink;
+	}
+
+	public String getLogo() {
+		return logo;
+	}
+
+	public void setLogo(String logo) {
+		this.logo = logo;
+	}
+
+	public String getBanner() {
+		return banner;
+	}
+
+	public void setBanner(String banner) {
+		this.banner = banner;
 	}
 	
 	
